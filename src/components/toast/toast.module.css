@@ -1,0 +1,26 @@
+.toast {
+  position: fixed;
+  right: 16px;
+  bottom: 16px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  color: #fff;
+  transform: translateY(8px);
+  opacity: 0;
+  animation: show 0.25s ease forwards;
+}
+.info {
+  background: #334155;
+}
+.success {
+  background: #16a34a;
+}
+.error {
+  background: #dc2626;
+}
+@keyframes show {
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
