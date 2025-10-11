@@ -1,0 +1,8 @@
+import{j as e}from"./jsx-runtime-D_zvdyIk.js";import{r as i}from"./iframe-BB-KQ4PV.js";import"./preload-helper-PPVm8Dsz.js";const m="_toast_2k8jw_1",d="_show_2k8jw_1",l="_info_2k8jw_12",p="_success_2k8jw_15",f="_error_2k8jw_18",c={toast:m,show:d,info:l,success:p,error:f};function o({message:s,type:a="info",duration:r=2e3,onClose:n}){return i.useEffect(()=>{const u=setTimeout(()=>n?.(),r);return()=>clearTimeout(u)},[r,n]),e.jsx("div",{className:`${c.toast} ${c[a]}`,children:s})}o.__docgenInfo={description:"",methods:[],displayName:"Toast",props:{message:{required:!0,tsType:{name:"string"},description:""},type:{required:!1,tsType:{name:"union",raw:"'info' | 'success' | 'error'",elements:[{name:"literal",value:"'info'"},{name:"literal",value:"'success'"},{name:"literal",value:"'error'"}]},description:"",defaultValue:{value:"'info'",computed:!1}},duration:{required:!1,tsType:{name:"number"},description:"",defaultValue:{value:"2000",computed:!1}},onClose:{required:!1,tsType:{name:"signature",type:"function",raw:"() => void",signature:{arguments:[],return:{name:"void"}}},description:""}}};const v={title:"Feedback/Toast",component:o,parameters:{layout:"centered"}},_=s=>{const[a,r]=i.useState(!1);return e.jsxs(e.Fragment,{children:[e.jsx("button",{onClick:()=>r(!0),children:"Show Toast"}),a&&e.jsx(o,{...s,onClose:()=>r(!1)})]})},t={args:{message:"Saved!",type:"success",duration:1500},render:s=>e.jsx(_,{...s})};t.parameters={...t.parameters,docs:{...t.parameters?.docs,source:{originalSource:`{
+  args: {
+    message: "Saved!",
+    type: "success",
+    duration: 1500
+  },
+  render: args => <BasicDemo {...args} />
+}`,...t.parameters?.docs?.source}}};const x=["Basic"];export{t as Basic,x as __namedExportsOrder,v as default};
